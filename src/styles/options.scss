@@ -1,0 +1,54 @@
+.options {
+  border: 1px solid $border-color;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+  background-color: $background-color-secondary;
+  text-align: left;
+
+  tr {
+    border: 1px solid $border-color;
+    padding: $table-padding-verticle $table-padding-horizontal;
+  }
+
+  th,
+  td {
+    padding: $table-padding-verticle $table-padding-horizontal;
+    text-align: right;
+    border-right: 1px solid $border-color-inner;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:first-child,
+    &:nth-child(2) {
+      text-align: left;
+    }
+  }
+
+  th {
+    text-transform: uppercase;
+    color: $text-color-secondary;
+
+    &.sub-heading {
+      text-transform: none;
+      color: $text-color;
+      background-color: $background-color;
+    }
+  }
+
+  td:first-child {
+    text-transform: uppercase;
+    color: $highlight-color;
+  }
+
+  .caption {
+    text-align: left;
+    font-weight: 600;
+    color: $text-color;
+    border: 1px solid $border-color;
+    background-color: $background-color-secondary;
+    padding: $table-padding-verticle $table-padding-horizontal;
+  }
+}

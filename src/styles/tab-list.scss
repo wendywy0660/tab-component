@@ -1,0 +1,13 @@
+.tab__list-item {
+  display: inline-block;
+  list-style: none;
+  color: $text-color-secondary;
+  font-weight: 600;
+  margin-bottom: -1px;
+  padding: $tab-padding $tab-padding $tab-padding 0;
+  cursor: pointer;
+
+  &.is-active {
+    color: $text-color;
+  }
+}

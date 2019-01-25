@@ -1,0 +1,52 @@
+.warrants.ReactTable {
+    background-color: $background-color-secondary;
+
+  .rt-thead .rt-th {
+    text-transform: uppercase;
+    color: $text-color-secondary;
+  }
+
+  .rt-th,
+  .rt-td {
+    padding: $table-padding-verticle $table-padding-horizontal;
+    text-align: right;
+
+    &:first-child,
+    &:nth-child(2) {
+      text-align: left;
+    }
+  }
+
+  .rt-thead.-header {
+    border-bottom: 1px solid $border-color-inner;
+    box-shadow: 0 1px 3px 0 $border-color;
+  }
+
+  .rt-td:first-child {
+    text-transform: uppercase;
+    color: $highlight-color;
+  }
+
+  .rt-thead .rt-th,
+  .rt-thead .rt-td {
+    padding: $table-padding-verticle $table-padding-horizontal;
+  }
+
+  select {
+    border: 1px solid $border-color;
+    background: $background-color-secondary;
+    padding: 8px;
+    font-size: inherit;
+    border-radius: 3px;
+    font-weight: normal;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .table__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
